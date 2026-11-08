@@ -19,6 +19,18 @@ fn main() {
         x+1 //a block can return a value, but only if its final expression does not end with a semicolon. so there is no semiclone
     };
     println!("The value of y is : {y} ");
+
+    /*
+    Functions can return values to the code that calls them. We don’t name
+    return values, but we must declare their type after an arrow (->). In Rust,
+    the return value of the function is synonymous with the value of the final
+    expression in the block of the body of a function. You can return early from
+    a function by using the return keyword and specifying a value, but most
+    functions return the last expression implicitly.
+        
+     */
+   let n= sum(3, 4);
+   println!("{n}")
 }
 
 fn hello_world() {
@@ -29,4 +41,8 @@ fn hello_world() {
 // In function signatures must declare the type of each parameter
 fn para_function(x: i32) {
     println!("The value of x is {x}");
+}
+
+fn sum (x:i32, y:i32)-> i32{
+    x+y
 }
