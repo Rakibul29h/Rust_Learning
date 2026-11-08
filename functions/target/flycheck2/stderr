@@ -1,2 +1,3 @@
-    Checking functions v0.1.0 (E:\Rust\Rust_Learning\functions)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.21s
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.04s

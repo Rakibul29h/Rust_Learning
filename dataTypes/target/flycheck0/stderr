@@ -3,6 +3,6 @@
     Blocking waiting for file lock on package cache
     Blocking waiting for file lock on shared package cache
     Checking dataTypes v0.1.0 (E:\Rust\Rust_Learning\dataTypes)
-error: could not compile `dataTypes` (bin "dataTypes") due to 1 previous error; 10 warnings emitted
-warning: build failed, waiting for other jobs to finish...
 error: could not compile `dataTypes` (bin "dataTypes" test) due to 1 previous error; 10 warnings emitted
+warning: build failed, waiting for other jobs to finish...
+error: could not compile `dataTypes` (bin "dataTypes") due to 1 previous error; 10 warnings emitted
