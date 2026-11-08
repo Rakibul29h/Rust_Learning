@@ -54,7 +54,29 @@ fn main() {
     Integer division truncates toward zero to the nearest integer
     */
 
-   
+   /*
+    * Compound Types
+    Compound types can group multiple values into one type. Rust has two
+    primitive compound types: 
+        * tuples and pdf page 81 (3rd edition)
+        * arrays.
+    */
+
+   let tup:(i32,f32,char)=(500,20.12,'c');
+   let (x,y,z)=tup; //destructuring
+   println!("The value of x is {x}");
+   println!("The value of y is {y}");
+   println!("The value of z is {z}");
+
+   // Also can done by 
+   let m=tup.0;
+   let n = tup.1;
+   let o = tup.2;
+
+   let a:[i8;5] = [2,3,4,5,6];
+   let b =[3;5] // b= [3,3,3,3,3]
+
+   let first = a[0];
    
    
 }
