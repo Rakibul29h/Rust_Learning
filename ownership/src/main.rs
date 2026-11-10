@@ -25,7 +25,7 @@ fn main() {
      /*
         let s1 = String::from("Hello, ");
       let s2 = s1;
-      println!("{s1} world");
+      println!("{s1} worlds
       */
 
      let mut s1 = String::from("hello");
@@ -68,7 +68,44 @@ fn main() {
 
      let mut name = String::from("Rakibul ");
      change_name(&mut name);
-     println!("{}",name)
+     println!("{}",name);
+
+     /*
+     let mut s = String::from("hello");
+     let r1 = &mut s;
+     let r2 = &mut s;
+     println!("{r1}, {r2}");
+     This code is invalid because we cannot borrow s as mutable more than once time 
+     The benefit of having this restriction is
+     that Rust can prevent data races at compile time. A data race is similar to a
+     race condition and happens when these three behaviors occur:
+     ->Two or more pointers access the same data at the same time.
+     ->At least one of the pointers is being used to write to the data.
+     ->There’s no mechanism being used to synchronize access to the data.
+      */
+
+     let mut s2 = String::from("Hello");
+     {
+         let r1 = &mut s2;
+     }
+     let r2 = &mut s2;
+
+     /*
+      here r1 goes out of scope , so we can make a new reference with no problems;
+      */
+
+     /*
+      *  We also cannot have a mutable reference while we have an immutable one to the same value.
+      let mut s = String::from("hello");
+      let r1 = &s; // no problem
+      let r2 = &s; // no problem
+      let r3 = &mut s; // BIG PROBLEM
+      println!("{r1}, {r2}, and {r3}");
+      See more about referencing and browing
+      */
+
+     
+     
 }
 
 fn calculate_len( s: &String) -> usize{
