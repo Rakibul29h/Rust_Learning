@@ -1,2 +1,3 @@
-    Checking control_flow v0.1.0 (E:\Rust\Rust_Learning\control_flow)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.28s
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.05s
