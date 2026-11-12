@@ -121,7 +121,11 @@ fn main() {
        -> References must always be valid.
       */
 
-     
+     // The Slide Type
+     /*
+     Slices let you reference a contiguous sequence of elements in a collection. A
+     slice is a kind of reference, so it does not have ownership
+      */
      
 }
 
@@ -132,3 +136,15 @@ fn calculate_len( s: &String) -> usize{
 fn change_name(name: &mut String){
     name.push_str(" islam");
 }
+
+
+fn first_word(s:&String)->usize{
+    let bytes = s.as_bytes();
+    for (i, &item) in bytes.iter().enumerate(){
+        if item == b' '{
+            return i;
+        }
+    }
+    s.len()
+}
+
