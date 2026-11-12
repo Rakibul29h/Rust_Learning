@@ -1,2 +1,4 @@
-    Checking vector v0.1.0 (E:\Rust\Rust_Learning\vector)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.29s
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on shared package cache
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.03s
