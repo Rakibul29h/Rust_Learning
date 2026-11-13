@@ -1,4 +1,6 @@
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
     Checking guessing_game v0.1.0 (E:\Rust\Rust_Learning\guessing_game)
-error: could not compile `guessing_game` (bin "guessing_game") due to 1 previous error
-warning: build failed, waiting for other jobs to finish...
 error: could not compile `guessing_game` (bin "guessing_game" test) due to 1 previous error
+warning: build failed, waiting for other jobs to finish...
+error: could not compile `guessing_game` (bin "guessing_game") due to 1 previous error
