@@ -1,2 +1,3 @@
-    Checking traits_p v0.1.0 (E:\Rust\Rust_Learning\traits_p)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.20s
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.03s
