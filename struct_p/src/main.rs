@@ -5,6 +5,20 @@ struct Ractangle{
     height:u32
 }
 
+impl Ractangle {
+    //assocative function
+    fn new(width:u32,height:u32)->Self{
+        Self{
+            width,
+            height
+        }
+    }
+    fn area(&self)->u32{
+        self.height*self.width
+    }
+    
+}
+
 fn main() {
    /*
     * Struct
@@ -110,12 +124,17 @@ fn main() {
     };
     println!("Area of the rectangle is {} square unit", area(&rec1));
 
+    
     /*
      Printing a full struct we need to add #[derive(Debug)] before the struct decleration
      then println!("{variablename:?}");
      */
 
     println!("Full rec is {rec1:?}");
+
+    let rec2 = Ractangle::new(23, 20);
+    let area_rec2 = rec2.area();
+    println!("Area of ractange 2 is : {}",area_rec2);
 }
 
 fn area(rectange:&Ractangle)->u32{
