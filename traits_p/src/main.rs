@@ -12,6 +12,14 @@ impl Shape for Circle{
     }
 }
 
+
+struct Person;
+trait Greet{
+    fn greet(&self){
+        println!("Hello from default greet!");
+    }
+}
+impl Greet for Person{}
 fn main() {
 
     let circle = Circle{
@@ -19,4 +27,7 @@ fn main() {
     };
 
     circle.area_circle();
+
+    let person1 = Person;
+    person1.greet();
 }
